@@ -1,0 +1,19 @@
+node_modules/
+.env
+.env.*
+*.log
+
+# Rust build output
+target/
+
+# Terminal 3's own reference contract, cloned during testing — not our work,
+# and it carries its own .git. See README for the clone command.
+contract/
+
+# never commit anything that could carry the API key
+*.key
+secrets*
+.claude/settings.local.json
+
+# Word report - published as a Google Doc instead; screenshots not yet eyeballed
+Terminal3_ADK_Test_Report.docx
